@@ -11,7 +11,7 @@ const Navigation = () => {
             React Timer App
           </li>
           <li className="">
-            <IndexLink to="/timer" activeClassName="active-link">Timer</IndexLink>
+            <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
           </li>
           <li className="">
             <Link to="/countdown" activeClassName="active-link">Countdown</Link>
