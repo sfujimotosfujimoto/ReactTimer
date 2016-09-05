@@ -12,7 +12,7 @@ class Controls extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    
+
   }
 
   render() {
@@ -21,7 +21,7 @@ class Controls extends React.Component {
       if (countdownStatus === 'started') {
         return <button className="button secondary" onClick={this.onStatusChange('paused')}>Pause</button>
         //why doesn't 'onClick' have to 'bind(this)'?
-      } else if (countdownStatus === 'paused') {
+      } else  {
         return <button className="button primary" onClick={this.onStatusChange('started')}>Start</button>
       }
     };
@@ -31,11 +31,6 @@ class Controls extends React.Component {
         {renderStartStopButton()}
         <button className="button alert hollow" onClick={this.onStatusChange('stopped')}>Clear</button>
       </div>
-//       <div className="controls">
-//         {renderStartStopButton()}
-//         <button className="button alert hollow" onClick={() => this.onStatusChange('stopped')}>Clear</button>
-//       </div>
-
     )
   }
 };
