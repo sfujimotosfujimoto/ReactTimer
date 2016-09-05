@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
 import $ from 'jQuery';
 
-import CountdownForm from '../components/CountdownForm';
+import CountdownForm from '../../components/CountdownForm';
 
 describe('CountdownForm', () => {
   it('should exist', () => {

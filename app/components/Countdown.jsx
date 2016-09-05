@@ -31,7 +31,7 @@ class Countdown extends React.Component {
         count: newCount >= 0 ? newCount : 0
       });
 
-      
+
     }, 1000)
   }
 

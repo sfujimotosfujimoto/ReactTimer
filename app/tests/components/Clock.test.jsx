@@ -4,7 +4,7 @@ import expect from 'expect';
 import $ from 'jQuery';
 import TestUtils from 'react-addons-test-utils';
 
-import Clock from '../components/Clock';
+import Clock from '../../components/Clock';
 
 describe('Clock', () =>{
   it('should exist', () => {
