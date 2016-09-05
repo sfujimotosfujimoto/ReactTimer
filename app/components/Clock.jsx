@@ -5,8 +5,10 @@ class Clock extends React.Component {
     super(props);
   }
 
-  componentWillReceiveProps() {
-
+  componentWillReceiveProps(nextProps) {
+    if(this.props.totalSeconds === 'undefined') {
+      
+    }
   }
   formatSeconds(totalSeconds) {
     let seconds = totalSeconds % 60;
@@ -37,12 +39,9 @@ Clock.propTypes = {
   totalSeconds: React.PropTypes.number
 }
 
-/*
-Clocks.getDefaultProps() {
-  return {
-    totalSeconds: 0
-  }
+
+Clock.defaultProps = {
+  totalSeconds: 0
 }
-*/
 
 export default Clock;
