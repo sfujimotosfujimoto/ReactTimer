@@ -12,7 +12,7 @@ class Controls extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    console.log('componentWillReceiveProps', newProps.countdownStatus);
+    
   }
 
   render() {
